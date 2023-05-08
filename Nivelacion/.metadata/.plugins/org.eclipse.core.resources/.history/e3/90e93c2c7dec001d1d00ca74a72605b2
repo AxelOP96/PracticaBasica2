@@ -1,0 +1,25 @@
+package ar.edu.unlam.pb;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class PruebaAlumnos {
+
+	@Test
+	public void queSePuedaAlmacenarLaNotaDelPrimerParcial() {
+		//Error excepcion
+		//Failure algo que esperaba y no fue asi
+		//Datos de entrada
+		int notaDelPrimerParcial =7;
+		Alumno Axel; 
+		
+		//Ejecucion
+		Axel = new Alumno();
+		Axel.setNotaPrimerParcial(notaDelPrimerParcial);
+		//Salida
+		assertEquals(notaDelPrimerParcial, Axel.getNotaPrimerParcial());
+		Axel.getNotaPrimerParcial();
+	}
+
+}

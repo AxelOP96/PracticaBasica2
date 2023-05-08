@@ -1,0 +1,6 @@
+package ar.edu.unlam.pb;
+
+public class Persona {
+	private boolean viva;
+	private int edad;
+}

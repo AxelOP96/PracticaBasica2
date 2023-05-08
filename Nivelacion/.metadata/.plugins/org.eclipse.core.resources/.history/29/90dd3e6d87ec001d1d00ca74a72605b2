@@ -1,0 +1,19 @@
+package ar.edu.unlam.pb;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class PruebaPersona {
+
+	@Test
+	public void queCuandoSeInstancieUnaPersonaEsteViva() {
+		//Datos de entrada
+		Persona actual;
+		//Ejecucion
+		actual = new Persona();
+		//Salida
+		
+	}
+
+}
