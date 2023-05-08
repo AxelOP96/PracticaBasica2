@@ -100,9 +100,12 @@ public class Empresa {
 		 * 4.	Del conjunto de contactos resultante se debe seleccionar aleatoriamente el pr�ximo llamado.
 		 */
 		Contacto buscado = null;
-		if(buscado.getEsCliente() == true && buscado.getDeseaSerLlamado() && elCodigoPostalEstaDentroDeLaZonaDeCobertura(buscado.getCodigoPostal())) {
-			
+		for(int i=0; i< listaDeContactos.length;i++) {
+			if(listaDeContactos[i].getEsCliente() == false && listaDeContactos[i].getDeseaSerLlamado() && elCodigoPostalEstaDentroDeLaZonaDeCobertura(listaDeContactos[i].getCodigoPostal())) {
+				buscado = listaDeContactos[i];
+			}
 		}
+		
 		
 		return buscado;
 	}

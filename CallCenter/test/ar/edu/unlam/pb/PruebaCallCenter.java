@@ -36,5 +36,6 @@ interesa conocer:
 		assertTrue(lista[1].getEsCliente());
 		lista[1].setEsCliente(true);
 	}
-
+	
+	
 }
